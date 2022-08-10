@@ -4,9 +4,7 @@ if (products) {
   products.forEach(el => {
     let currentProduct = el;
     const imageSwitcItems = el.querySelectorAll('.image-switch__item');
-    console.log(imageSwitcItems);
     const imagePagination = el.querySelector('.image-pagination');
-    console.log(imagePagination);
     imageSwitcItems.forEach((el, index) => {
         el.setAttribute('data-index', index)
         imagePagination.innerHTML += `<li class='image-pagination__item ${index == 0 ? 'image-pagination__item--active' : ''}' data-index='${index}'></li>`
